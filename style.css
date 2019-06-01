@@ -1,0 +1,302 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: Poppins;
+	background-color: #111;
+}
+
+/* LINE BACKGROUND */
+.line-bg-1 {
+	position: absolute;
+	width: 2px;
+	background-color: white;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.3);
+	left: 20%;
+}
+.line-bg-2 {
+	position: absolute;
+	width: 2px;
+	background-color: white;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.3);
+	left: 40%;
+}
+.line-bg-3 {
+	position: absolute;
+	width: 2px;
+	background-color: white;
+	height: 100vh;
+	background: rgba(255, 255, 255, 0.3);
+	left: 85%;
+}
+
+/* Top Bar */
+.top-bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.top-bar ul li {
+	list-style: none;
+	line-height: 46px;
+	padding: 16px 32px;
+	margin: 0 16px;
+}
+.user {
+	color: white;
+	font-weight: bold;
+	position: fixed;
+	left: 40px;
+}
+.menu-btn {
+	position: fixed;
+	right: 40px;
+	padding: 16px 0 0 0;
+	width: 40px;
+	height: 40px;
+}
+.strip-btn-1, .strip-btn-2 {
+	position: absolute;
+	background: #fff;
+	right: 10px;
+	width: 60px;
+	height: 2px;
+}
+.strip-btn-2 {
+	width: 30px;
+	margin-top: 12px;
+}
+
+/* NAVIGASI */
+.profile a {
+	color: white;
+	padding: 10px 30px;
+	position: fixed;
+	left: 80px;
+	top: 130px;
+	transform: rotate(-90deg);
+	text-decoration: none;
+}
+.portfolio a {
+	color: white;
+	padding: 10px 30px;
+	position: fixed;
+	left: 75px;
+	top: 260px;
+	transform: rotate(-90deg);
+	text-decoration: none;
+}
+.contact a {
+	color: white;
+	padding: 10px 30px;
+	position: fixed;
+	left: 80px;
+	top: 390px;
+	transform: rotate(-90deg);
+	text-decoration: none;
+}
+
+/* Description */
+.description {
+	z-index: 0;
+	color: white;
+	position: fixed;
+	top: 205px;
+	left: 270px;
+	padding: 10px 30px;
+	font-size: 14px;
+}
+
+/* IMAGE */
+.img {
+	position: fixed;
+	z-index: 0;
+	top: 24.6%;
+	left: 38%;
+}
+.img img {
+	width: 400px;
+}
+
+/* NAMA */
+.Name {
+	color: #fff;
+	position: fixed;
+	font-size: 62px;
+	position: absolute;
+	top: 276px;
+	left: 842px;
+	transform: rotate(90deg);
+}
+
+/* LINE */
+.line1 {
+	position: fixed;
+	left: 300px;
+	top: 200px;
+	background: #fff;
+	width: 220px;
+	height: 1px;
+}
+.line2 {
+	position: fixed;
+	right: 230px;
+	top: 200px;
+	background: #fff;
+	width: 220px;
+	height: 1px;
+	transform: rotate(90deg);
+}
+.line3 {
+	position: fixed;
+	left: 300px;
+	bottom: 105px;
+	background: #fff;
+	width: 190px;
+	height: 1px;
+}
+
+/* STAR */
+.star-1 {
+	position: fixed;
+	left: 22%;
+	top: 140px;
+	color: #888;
+}
+.star-2 {
+	position: fixed;
+	left: 29.5%;
+	top: 120px;
+	color: #888;
+}
+.star-3 {
+	position: fixed;
+	left: 37%;
+	top: 140px;
+	color: #888;
+}
+
+/* MEDIA */
+.media ul {
+	list-style: none;
+	position: fixed;
+	right: 20px;
+	top: 45%;
+	padding: 10px 10px;
+}
+.media ul li {
+	font-size: 18px;
+	margin: 24px 0;
+}
+.media ul li a {
+	color: white;
+}
+
+/* COPYRIGHT */
+.copyright {
+	font-size: 13px;
+	color: white;
+	position: fixed;
+	left: 25px;
+	bottom: 20px;
+}
+
+/* Animation */
+.description span {
+	opacity: 0;
+	animation: anim-opacity 0.0001s linear forwards;
+	animation-delay: 2.3s;
+}
+.description:after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #999;
+	position: absolute;
+	animation: anim-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+	animation-delay: 2s;
+}
+
+.Name span {
+	opacity: 0;
+	animation: anim-opacity 0.0001s linear forwards;
+	animation-delay: 2s;
+}
+.Name:after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #222;
+	position: absolute;
+	animation: anim-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+	animation-delay: 1.4s;
+}
+
+img {
+	opacity: 0;
+	animation: anim-opacity 1s linear forwards;
+	animation-delay: 1.4s;
+}
+
+.img:after {
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #444;
+	position: absolute;
+	animation: anim-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+	animation-delay: 1s;
+}
+
+@keyframes anim-opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes anim-block {
+	0% {
+		left: 0%;
+		width: 0%;
+	}
+
+	50% {
+		left: 0;
+		width: 100%;
+	}
+
+	100% {
+		left: 100%;
+		width: 0%;
+	}
+}
+
+@keyframes anim-img {
+	0% {
+		left: 0%;
+		width: 0%;
+	}
+
+	50% {
+		left: 0;
+		width: 400px;
+	}
+
+	100% {
+		left: 100%;
+		width: 0%;
+	}
+}

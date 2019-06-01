@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Landing-Page Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Charm:700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		
+		<!-- Strip -->
+		<div class="strips">
+			<div class="line-bg-1"></div>
+			<div class="line-bg-2"></div>
+			<div class="line-bg-3"></div>
+		</div>
+
+		<!-- Top_bar -->
+		<div class="top-bar">
+			<ul>
+				<li>
+					<div class="user">
+						<i class="fa fa-user"></i>
+						<span>Martinus Richard Ticoalu</span>
+					</div>
+				</li>
+				<li>
+					<div class="menu-btn">
+						<span class="strip-btn-1"></span>
+						<span class="strip-btn-2"></span>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Data -->
+		<div class="nav">
+			<div class="profile"><a href="#profile"><span>Profile</span></a></div>
+			<div class="portfolio"><a href="#portfolio"><span>Portfolio</span></a></div>
+			<div class="contact"><a href="#contact"><span>Contact</span></a></div>
+		</div>
+
+		<!-- Description -->
+		<div class="description">
+			<span>Hi, My Name is,</span>
+			<span style="font-size: 20px;"><br>Martinus Richard Ticoalu .</span>
+			<span><br>Im a,</span>
+			<span style="font-size: 17px;"><br>Web Developer . <br>Blogger . <br>Photographer .</span>
+		</div>
+
+		<!-- Image -->
+		<div class="img">
+			<img src="L-Lawliet.png" alt="">
+		</div>
+
+		<!-- Name -->
+		<div class="Name">
+			<span>Martinus Richard</span>
+		</div>
+
+		<!-- Line -->
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+		
+		<!-- Star -->
+		<div class="star-1">
+			<i class="fa fa-star"></i>
+		</div>
+		<div class="star-2">
+			<i class="fa fa-star"></i>
+		</div>
+		<div class="star-3">
+			<i class="fa fa-star"></i>
+		</div>
+
+		<!-- Media -->
+		<div class="media">
+			<ul>
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
+				<li><a href=""><i class="fa fa-instagram"></i></a></li>
+				<li><a href=""><i class="fa fa-github"></i></a></li>
+			</ul>
+		</div>
+
+		<!-- Copyright -->
+		<div class="copyright">
+			<span>Copyright &copy; 2019 || by Martinus Richard</span>
+		</div>
+
+	</div>
+	<!-- END OF CONTAINER -->
+
+	<script type="text/javascript">
+		/* USER */
+		TweenMax.from(".user", 1.2, {
+			delay: .8,
+			opacity: 0,
+			y: -30,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".strip-btn-1", 1.2, {
+			delay: 1.2,
+			opacity: 0,
+			x: 40,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".strip-btn-2", 1.2, {
+			delay: 1.4,
+			opacity: 0,
+			x: 40,
+			ease: Expo.easeInOut
+		});
+
+		// NAVIGASI
+		TweenMax.from(".profile", 1.4, {
+			delay: 1,
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".portfolio", 1.4, {
+			delay: 1.2,
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".contact", 1.4, {
+			delay: 1.4,
+			opacity: 0,
+			y: 40,
+			ease: Expo.easeInOut
+		});
+
+		// LINE
+		TweenMax.from(".line1", 2, {
+			delay: 2.8,
+			opacity: 0,
+			x: -30,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".line2", 2, {
+			delay: 2.8,
+			opacity: 0,
+			y: -30,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".line3", 2, {
+			delay: 2.8,
+			opacity: 0,
+			x: -30,
+			ease: Expo.easeInOut
+		});
+
+		// Star
+		TweenMax.from(".star-1", 3, {
+			delay: 1.5,
+			opacity: 0,
+			y: -180,
+			rotation: 90,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".star-2", 3, {
+			delay: 1.8,
+			opacity: 0,
+			y: -180,
+			rotation: 90,
+			ease: Expo.easeInOut
+		});
+		TweenMax.from(".star-3", 3, {
+			delay: 1.5,
+			opacity: 0,
+			y: -180,
+			rotation: 90,
+			ease: Expo.easeInOut
+		});
+
+		// MEDIA
+		TweenMax.staggerFrom(".media ul li", 2, {
+			delay: 2.8,
+			opacity: 0,
+			x: 40,
+			ease: Elastic.easeInOut
+		}, 0.2);
+
+		// COPYRIGHT
+		TweenMax.from(".copyright", 2, {
+			delay: 3,
+			opacity: 0,
+			y: 40,
+			ease: Elastic.easeInOut
+		});
+	</script>
+</body>
+</html>
